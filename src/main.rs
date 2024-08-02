@@ -43,9 +43,9 @@ async fn get_answer(query: &str) {
 #[tokio::main]
 async fn main() {
 
-    // store_text_vector_store("ns1",
-    //                         "Tanmay likes to code low level stuff in Rust programming language because it is more efficient and memory safe.")
-    //     .await;
+    store_text_vector_store("ns1",
+                            "Tanmay likes to code low level stuff in Rust programming language because it is more efficient and memory safe.")
+        .await;
 
     // query
     get_answer("What tanmay likes").await;
